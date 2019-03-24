@@ -23,11 +23,15 @@ int main()
 			{
 				c = A[i][j] / A[j][j];
 				for (k = 1; k <= n + 1; k++)
-				{
-					A[i][k] = A[i][k] - c * A[j][k];
+	{
+		A[i][k] = A[i][k] - c * A[j][k];
+	
 				}
+	
 			}
+	
 		}
+	
 	}
 	x[n] = A[n][n + 1] / A[n][n];
 
